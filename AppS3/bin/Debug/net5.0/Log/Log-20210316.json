@@ -1,0 +1,38 @@
+14:14:46 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 436.5322 ms
+14:14:48 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 470.7436 ms
+14:15:07 [Information] Executed DbCommand ("40"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `a`.`Id`, `a`.`AccessFailedCount`, `a`.`ConcurrencyStamp`, `a`.`DoB`, `a`.`Email`, `a`.`EmailConfirmed`, `a`.`LockoutEnabled`, `a`.`LockoutEnd`, `a`.`Name`, `a`.`NormalizedEmail`, `a`.`NormalizedUserName`, `a`.`PasswordHash`, `a`.`PhoneNumber`, `a`.`PhoneNumberConfirmed`, `a`.`SecurityStamp`, `a`.`TwoFactorEnabled`, `a`.`UserName`
+FROM `AspNetUsers` AS `a`
+WHERE `a`.`NormalizedUserName` = @__normalizedUserName_0
+LIMIT 1"
+14:15:07 [Information] Executed DbCommand ("35"ms) [Parameters=["@__userId_0='?' (Size = 767)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `a0`.`Name`
+FROM `AspNetUserRoles` AS `a`
+INNER JOIN `AspNetRoles` AS `a0` ON `a`.`RoleId` = `a0`.`Id`
+WHERE `a`.`UserId` = @__userId_0"
+14:15:07 [Information] HTTP "POST" "/api/Authentication/Login" responded 200 in 4713.4671 ms
+14:18:39 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 206.5941 ms
+14:18:40 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 206.2681 ms
+14:18:50 [Information] Executed DbCommand ("20"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `a`.`Id`, `a`.`AccessFailedCount`, `a`.`ConcurrencyStamp`, `a`.`DoB`, `a`.`Email`, `a`.`EmailConfirmed`, `a`.`LockoutEnabled`, `a`.`LockoutEnd`, `a`.`Name`, `a`.`NormalizedEmail`, `a`.`NormalizedUserName`, `a`.`PasswordHash`, `a`.`PhoneNumber`, `a`.`PhoneNumberConfirmed`, `a`.`SecurityStamp`, `a`.`TwoFactorEnabled`, `a`.`UserName`
+FROM `AspNetUsers` AS `a`
+WHERE `a`.`NormalizedUserName` = @__normalizedUserName_0
+LIMIT 1"
+14:18:51 [Information] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (Size = 767)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `a0`.`Name`
+FROM `AspNetUserRoles` AS `a`
+INNER JOIN `AspNetRoles` AS `a0` ON `a`.`RoleId` = `a0`.`Id`
+WHERE `a`.`UserId` = @__userId_0"
+14:18:51 [Information] HTTP "POST" "/api/Authentication/Login" responded 200 in 3240.8222 ms
+14:19:29 [Information] Executed DbCommand ("195"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT `e`.`Id`, `e`.`DayGetIn`, `e`.`FirstName`, `e`.`LastName`, `e`.`PositionId`, `e`.`SalScale1`
+FROM `Employees` AS `e`"
+14:19:29 [Information] HTTP "GET" "/api/Employees/" responded 200 in 572.7147 ms
+14:19:35 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT `e`.`Id`, `e`.`DayGetIn`, `e`.`FirstName`, `e`.`LastName`, `e`.`PositionId`, `e`.`SalScale1`
+FROM `Employees` AS `e`"
+14:19:35 [Information] HTTP "GET" "/api/Employees/" responded 200 in 22.7468 ms
+14:19:46 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT `e`.`Id`, `e`.`DayGetIn`, `e`.`FirstName`, `e`.`LastName`, `e`.`PositionId`, `e`.`SalScale1`
+FROM `Employees` AS `e`"
+14:19:46 [Information] HTTP "GET" "/api/Employees/" responded 200 in 3.1200 ms
